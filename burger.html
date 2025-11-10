@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Burger Fan, I Love Burgers</title>
+  <link rel="stylesheet" href="burger.css" />
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <header class="site-header">
+    <div class="header-bar"></div>
+    <label for="menu-toggle" class="burger" aria-label="Toggle menu" role="button">
+      <span class="burger-lines"></span>
+    </label>
+    <a href="#home" class="brand">THE BURGER FAN🍔</a>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#home" class="nav-link">HOME</a></li>
+      <li><a href="#about" class="nav-link">ABOUT</a></li>
+      <li><a href="#contact" class="nav-link">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="home" class="section">
+      <h1>WELCOME TO THE BURGER FAN!</h1>
+      <p>A Place Where Love For Burgers Are Widely Shared.</p>
+      <p>These Are My Top 3 Fast Food Restaurants With The Best Burgers</p>
+      <div class="image-grid">
+
+        <a href="https://www.bk.com" target="_blank" class="image-card">
+          <img src="bklogo.png" alt="Burger King Logo">
+          <p>Burger King</p>
+          <p>Burger King’s burgers are best known for their smoky, and flame-grilled taste. It is always satisfying, and always hitting the spot, it’s the perfect, and the classic burger!</p>
+        </a>
+
+        <a href="https://zarksburgers.ph/" target="_blank" class="image-card">
+          <img src="zblogo.png" alt="Zark's Burgesrs Logo">
+          <p>Zark's Burgers</p>
+          <p>Zark’s Burgers never disappoints, packed with flavors, loaded with cheese, all in an enormous piece of burger. It’s the kind of burger that fills you up perfectly during or after a tiring day!</p>
+        </a>
+
+        <a href="https://www.wendys.com" target="_blank" class="image-card">
+          <img src="wlogo.png" alt="Wendy's Logo">
+          <p>Wendy's</p>
+          <p>Wendy’s burgers are simple, fresh, and tasty. The soft buns, the juicy patties, and the flavors, when all these factors are combined, creates a masterpiece of a burger!</p>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="burgerfan.jpg" alt="Burger Fan">
+        </div>
+        <div class="about-text">
+          <h2>ABOUT THE BURGER FAN</h2>
+          <p>Hello there! I'm Mhatt Cyrus Estoril, a student in Panpacific University - Urdaneta Campusion, I'm currently in my second year in the program of Bachelor of Sciece in Information Technology.</p>
+          <p>Burgers, they are my go to snack, it's easy to eat, it's delicious, and it fills my tummy every single time. I made this webpage in order to share my love for burgers.</p>
+          <p>Other than burgers, I also have interests in tv shows, anime, video games, movies, and many more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>CONTACT ME</h2>
+      <p>If you wanna yap more than about burgers, I'm always available!</p>
+      <P>You can talk to me about video games, tv shows, movies, and all the other interesting stuffs!</P>
+      <div class="contact-info">
+        <p><strong>Email:</strong> mhattcyrus@gmail.com</p>
+        <p><strong>Phone:</strong> +63 993 630 2733</p>
+        <p><strong>Location:</strong> Asingan, Pangasinan, Philippines</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 The Burger Fan — All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('menu-toggle').checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
